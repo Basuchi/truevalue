@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>True Value Properties</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="truevalue.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+  .gfg {
+            margin: 3%;
+            position: relative;
+        }
+
+        .first-txt {
+            position: absolute;
+            top: 17px;
+            left: 20px;
+        }
+
+        .second-txt {
+            position: absolute;
+            top: 17px;
+            left: 150px;
+        }
+        .font-40{
+        font-size: 40px
+        }
+         .font-30{
+        font-size: 30px
+        }
+        .header-line{
+        line-height: 0.1
+        }
+        .menu-height{
+        line-height: 0.5
+        }
+
+        #enquiry-button {
+    position:fixed;
+    right: 10px;
+    bottom: 10px;
+}
+</style>
+<body>
+#050566
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-blue-title w3-card header-line">
+       
+        <a href="#" class="w3-bar-item w3-button w3-right" >For enquiry - 99643 99645</a>
+        </div>
+    <div class="w3-bar w3-blue w3-card menu-height">
+        <div class="w3-bar-item ">
+        <img src="./TRUEVALUE LOGO 100X50-WB-01-50p.png" style="width:70%" >
+        </div>
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-right">LOGIN</a>
+        <div class="w3-dropdown-hover w3-hide-small w3-right">
+            <button class="w3-padding-large w3-button" title="More">OUR SERVICES <i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="#" class="w3-bar-item w3-button" onclick="document.getElementById('kathaModal').style.display='block'">Katha Transfer</a>
+                <a href="#" class="w3-bar-item w3-button" onclick="loanDetails()">Loan</a>
+                <a href="#" class="w3-bar-item w3-button" onclick="docsVerification()">Document Verification</a>
+                <a href="#" class="w3-bar-item w3-button" onclick="propRegistration()">Prop Registartion</a>
+            </div>
+        </div>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">CONTACT</a>
+        <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">PROJECTS</a>
+        <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">ABOUT US</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-right">HOME</a>
+        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    </div>
+    <div>
+
+        <button class="w3-padding-large w3-button w3-right" title="quick enquiry" onclick="document.getElementById('contactModal').style.display='block'">enquiry <i class="fa fa-question-circle" aria-hidden="true"></i></button>
+    </div>
+</div>
+
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT US</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">OUR SERVICES</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">OUR SERVICES <i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="#" class="w3-bar-item w3-button" onclick="document.getElementById('kathaModal').style.display='block'">Katha Transfer</a>
+            <a href="#" class="w3-bar-item w3-button" onclick="loanDetails()">Loan</a>
+            <a href="#" class="w3-bar-item w3-button" onclick="docsVerification()">Document Verification</a>
+            <a href="#" class="w3-bar-item w3-button" onclick="propRegistration()">Prop Registartion</a>
+        </div>
+    </div>
+</div>
+
+<!-- Page content -->
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+    <!-- Automatic Slideshow Images -->
+    <!--
+    <div class="mySlides w3-display-container w3-center">
+        <img src="./la.jpg" style="width:100%">
+        <div >
+            <h3>Karnataka</h3>
+            <p><b>Thank you, Bangalore - A night we won't forget.</b></p>
+        </div>
+        <div class="gfg">
+            <img src="./la_1.jpg" style="width:100%;height:50%">
+            <h3 class="first-txt">Left</h3>
+            <h3 class="second-txt">Right</h3>
+        </div>
+    </div> -->
+
+    <div class="mySlides w3-display-container w3-center">
+        <!--<img src="./ny.jpg" style="width:100%">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <h3>Karnataka</h3>
+            <p><b>Thank you, Bangalore - A night we won't forget.</b></p>
+        </div> -->
+        <div class="gfg">
+            <img src="./ny.jpg" style="width:100%">
+            <div>
+                <h3 class="first-txt"> <span class="font-40">Smart Investment </span> <br> Register your flot today!! <br> 30X40 flots
+                    <br> for just <br> Rs.20 Lakhs
+
+                <br> <br>
+                    <span class="font-30">
+                    At Budigere <br>
+                    Near KIADB IT Park, Devanahalli
+                    </span>
+                </h3>
+
+            <h3 class="second-txt"></h3>
+            <h3 class="second-txt"></h3>
+            </div>
+        </div>
+    </div>
+
+   <div class="mySlides w3-display-container w3-center">
+       <img src="./Bangalore-F.jpg" style="width:100%">
+       <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+           <h3>Karnataka</h3>
+           <p><b>Thank you, Bangalore - A night we won't forget.</b></p>
+       </div>
+   </div>
+   <div class="mySlides w3-display-container w3-center">
+       <img src="./chicago.jpg" style="width:100%">
+       <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+           <h3>Karnataka</h3>
+           <p><b>Thank you, Bangalore - A night we won't forget.</b></p>
+       </div>
+   </div>
+   <div class="mySlides w3-display-container w3-center">
+       <img src="./blr.jpg" style="width:100%">
+       <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+           <h3>Karnataka</h3>
+           <p><b>Thank you, Bangalore - A night we won't forget.</b></p>
+       </div>
+   </div>
+    <div class="mySlides w3-display-container w3-center">
+        <img src="./tr-1.jpg" style="width:100%">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <h3>Karnataka</h3>
+            <p><b>Thank you, Bangalore - A night we won't forget.</b></p>
+        </div>
+    </div>
+
+
+    <!-- The Band Section -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+        <h2 class="w3-wide">ABOUT US</h2>
+        <p class="w3-opacity"><i>We have true value properties, we ensure end to end solution for property.</i></p>
+        <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="w3-row w3-padding-32">
+            <div class="w3-third">
+                <p>Name</p>
+                <img src="./architect.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+            </div>
+            <div class="w3-third">
+                <p>Name</p>
+                <img src="./architect.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+            </div>
+            <div class="w3-third">
+                <p>Name</p>
+                <img src="./architect.jpg" class="w3-round" alt="Random Name" style="width:60%">
+            </div>
+        </div>
+    </div>
+
+    <!-- The Tour Section -->
+    <div class="w3-black" id="tour">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center">OUR PROJECTS</h2>
+           <!--
+            <p class="w3-opacity w3-center"><i>We have close taiup with most of the big brand!</i></p><br>
+
+            <ul class="w3-ul w3-border w3-white w3-text-grey">
+                <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+                <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+                <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
+            </ul>
+            -->
+            
+            <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+                <div class="w3-third w3-margin-bottom">
+                    <img src="./newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>MG Road</b></p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('contactModal').style.display='block'">more properties</button>
+                    </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <img src="./paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Indiranagar</b></p>
+                     <!--   <p class="w3-opacity">Sat 28 Nov 2016</p> -->
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('contactModal').style.display='block'">more properties</button>
+                    </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <img src="./paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Bengalore West</b></p>
+                        <!--   <p class="w3-opacity">Sat 28 Nov 2016</p> -->
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('contactModal').style.display='block'">more properties</button>
+                    </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <img src="./paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Bengalore Airport</b></p>
+                        <!--   <p class="w3-opacity">Sat 28 Nov 2016</p> -->
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('contactModal').style.display='block'">more properties</button>
+                    </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <img src="./paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Mysure Road</b></p>
+                        <!--   <p class="w3-opacity">Sat 28 Nov 2016</p> -->
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('contactModal').style.display='block'">more properties</button>
+                    </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <img src="./sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Whitefield</b></p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('contactModal').style.display='block'">more properties</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ticket Modal -->
+    <div id="contactModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-teal w3-center">
+        <span onclick="document.getElementById('contactModal').style.display='none'"
+              class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+                <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Reach Us</h2>
+            </header>
+            <div class="w3-container">
+                <p><label><i class="fa fa-user"></i> Your Name</label></p>
+                <input class="w3-input w3-border" type="text" placeholder="Your Name">
+                <p><label><i class="fa  fa-envelope"></i> Email</label></p>
+                <input class="w3-input w3-border" type="text" placeholder="Email">
+                <p><label><i class="fa fa-phone"></i> Phone</label></p>
+                <input class="w3-input w3-border" type="text" placeholder="Your Phone">
+                <p><label><i class="fa fa-commenting" aria-hidden="true"></i> Message</label></p>
+                <textarea  class="w3-input w3-border" rows="4" cols="50" placeholder="Your message"> </textarea>
+                <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">Submit <i class="fa fa-check"></i></button>
+               <!--
+                <button class="w3-button w3-red w3-section" onclick="document.getElementById('contactModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+               -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Services Model -->
+    <div id="serviceModal" style="display:none">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-teal w3-center">
+                <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Katha Transfer</h2>
+            </header>
+            <div class="w3-container">
+                <p><label><i class="fa fa-shopping-cart"></i> Required Docs</label></p>
+                <p><label><i class="fa fa-user"></i> Aadhar</label></p>
+                <p><label><i class="fa fa-shopping-cart"></i> Pan</label></p>             
+
+            </div>
+        </div>
+    </div>
+    <div id="kathaModal" class="w3-modal" >
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-teal w3-center w3-padding-32">
+                <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Katha Transfer</h2>
+            </header>
+            <div class="w3-container">
+                <p><label><i class="fa fa-shopping-cart"></i> Required Docs</label></p>
+                <p><label><i class="fa fa-user"></i> Aadhar</label></p>
+                <p><label><i class="fa fa-shopping-cart"></i> Pan</label></p>
+            </div>
+            <button class="w3-button w3-red w3-section" onclick="document.getElementById('kathaModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        </div>
+    </div>
+
+
+    <!-- The Contact Section -->
+
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <h2 class="w3-wide w3-center">CONTACT US</h2>
+        <p class="w3-opacity w3-center"><i>Registred Office</i></p>
+        <div class="w3-row w3-padding-32">
+           
+            <div class="w3-col m6 w3-large w3-margin-bottom">
+
+                <i class="fa fa-map-marker" style="width:30px"></i> No. 747/4, 1st Floor, Opp. V.R.Plazza,<br> Budigere, Bengaluru - 562165<br> <br>
+                <i class="fa fa-phone" style="width:30px"></i> Call: +91-86602 23402<br><br>
+                <i class="fa fa-envelope" style="width:30px"> </i> Email: sales@true-value.in<br><br>
+                <i class="fa fa-clock-o" aria-hidden="true" style="width:30px"></i> Working Hours <br> 
+
+                Monday- Sunday: 10:00-18:00 Hrs<br>
+            </div>
+            <div class="w3-col m6">
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                       <!-- <div class="w3-half"> -->
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                        <!-- </div> -->
+                        <!-- <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        </div> -->
+                    </div>
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                    </div>
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px;width:101%">
+                    <input class="w3-input w3-border" style="width: 107%;" type="text" placeholder="Phone" required name="Phone">
+                    </div>
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px;width:108%">
+                    <textarea  class="w3-input w3-border"  rows="4" cols="50" placeholder="Your message" required name="Message"> </textarea>
+                    </div>
+                    <button class="w3-button w3-blue w3-section w3-right" type="submit">SEND</button>
+                </form>
+            </div>
+        </div>
+    </div>
+   
+
+    <!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<!--<img src="./map.jpg" class="w3-image w3-greyscale-min" style="width:100%">-->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="" target="_blank">Basu Dapalapur</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 4000);
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+function kathaTransfer(key){
+debugger;
+var x = document.getElementById("kathaModal");
+if(x)
+    x.style.display = "";
+
+}
+
+function loanDetails(){
+}
+
+function propRegistration(){
+}
+function docsVerification(){
+}
+</script>
+
+</body>
+</html>
