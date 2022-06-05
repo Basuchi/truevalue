@@ -106,7 +106,7 @@ body {font-family: "Lato", sans-serif}
 
        
        <div class="gfg">
-            <img src="./kiab_1.jpg" style="width:1300px">
+            <img src="./kiab_1.jpg" style="width:70%">
             <div>
                 <!-- <h3 class="first-txt"> <span class="font-40">Smart Investment </span> <br> Register your flot today!! <br> 30X40 flots
                     <br> for just <br> Rs.20 Lakhs
@@ -124,26 +124,26 @@ body {font-family: "Lato", sans-serif}
         </div> 
     </div>
     <div class="mySlides w3-display-container w3-center">
-       <img src="./vidhan.jpg" style="width:1300px">
+       <img src="./vidhan.jpg" style="width:70%">
        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
           
        </div>
    </div>
    <div class="mySlides w3-display-container w3-center">
-       <img src="./Bangalore-F.jpg" style="width:1300px">
+       <img src="./Bangalore-F.jpg" style="width:70%">
        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
           
        </div>
    </div>
    <div class="mySlides w3-display-container w3-center">
-       <img src="./chicago.jpg" style="width:1300px">
+       <img src="./chicago.jpg" style="width:70%">
        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
            
        </div>
    </div>
   
     <div class="mySlides w3-display-container w3-center">
-        <img src="./tr-1.jpg" style="width:1300px">
+        <img src="./tr-1.jpg" style="width:70%">
         <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
           
         </div>
@@ -221,10 +221,8 @@ Buying a lovely home is probably the most significant and expensive purchase you
                 <input class="w3-input w3-border" type="text" placeholder="Your Phone">
                 <p><label><i class="fa fa-commenting" aria-hidden="true"></i> Message</label></p>
                 <textarea  class="w3-input w3-border" rows="4" cols="50" placeholder="Your message"> </textarea>
-                <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">Submit <i class="fa fa-check"></i></button>
-               <!--
-                <button class="w3-button w3-red w3-section" onclick="document.getElementById('contactModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-               -->
+                <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" onclick="submitQuery()">Submit <i class="fa fa-check"></i></button>
+              
             </div>
         </div>
     </div>
@@ -253,7 +251,7 @@ Buying a lovely home is probably the most significant and expensive purchase you
                 <p><label><i class="fa fa-user"></i> Aadhar</label></p>
                 <p><label><i class="fa fa-shopping-cart"></i> Pan</label></p>
             </div>
-            <button class="w3-button w3-red w3-section" onclick="document.getElementById('kathaModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+            <button class="w3-button w3-red w3-section" onclick="document.getElementById('kathaModal').style.display='block'">Close <i class="fa fa-remove"></i></button>
         </div>
     </div>
 
@@ -365,6 +363,12 @@ function loanDetails(){
 function propRegistration(){
 }
 function docsVerification(){
+}
+
+function submitQuery(){
+
+document.getElementById('contactModal').style.display='none';
+alert('Thank for contacting us!. Our team will contact you within 24 hours');
 }
 </script>
 
