@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>True Value Properties</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/truevalue.css" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+  .gfg {
+            margin: 3%;
+            position: relative;
+        }
+
+        .first-txt {
+            position: absolute;
+            top: 17px;
+            left: 20px;
+        }
+
+        .second-txt {
+            position: absolute;
+            top: 17px;
+            left: 150px;
+        }
+        .font-40{
+        font-size: 40px
+        }
+         .font-30{
+        font-size: 30px
+        }
+        .header-line{
+        line-height: 0.1
+        }
+        .menu-height{
+        line-height: 0.5
+        }
+
+        #enquiry-button {
+    position:fixed;
+    right: 10px;
+    bottom: 10px;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="tr-top">
+    <div class="tr-bar tr-blue-title tr-card header-line">
+       
+        <a href="#" style="color: white; font-weight: bold;"  class="tr-bar-item tr-button tr-right" >For enquiry - 99643 99645</a>
+        </div>
+    <div class="tr-bar tr-blue tr-card menu-height">
+        <div class="tr-bar-item ">
+        <img src="/img/TRUEVALUE LOGO 100X50-WB-01-50p.png" style="width:70%" >
+        </div>
+        <a class="tr-bar-item tr-button tr-padding-large tr-hide-medium tr-hide-large tr-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="/admin/list" class="tr-bar-item tr-button tr-padding-large tr-right" >ADMIN LOGIN</a>
+        <div class="tr-dropdown-hover tr-hide-small tr-right">
+            <button class="tr-padding-large tr-button" title="More">OUR SERVICES <i class="fa fa-caret-down"></i></button>
+            <div class="tr-dropdown-content tr-bar-block tr-card-4">
+                <a href="#" class="tr-bar-item tr-button" onclick="document.getElementById('kathaModal').style.display='block'">Katha Transfer</a>
+                <a href="#" class="tr-bar-item tr-button" onclick="loanDetails()">Loan</a>
+                <a href="#" class="tr-bar-item tr-button" onclick="docsVerification()">Document Verification</a>
+                <a href="#" class="tr-bar-item tr-button" onclick="propRegistration()">Prop Registartion</a>
+            </div>
+        </div>
+        <a href="#contact" class="tr-bar-item tr-button tr-padding-large tr-hide-small tr-right">CONTACT</a>
+        <a href="#tour" class="tr-bar-item tr-button tr-padding-large tr-hide-small tr-right">PROJECTS</a>
+        <a href="#band" class="tr-bar-item tr-button tr-padding-large tr-hide-small tr-right">ABOUT US</a>
+        <a href="#" class="tr-bar-item tr-button tr-padding-large tr-right">HOME</a>
+        <a href="javascript:void(0)" class="tr-padding-large tr-hover-red tr-hide-small tr-right"><i class="fa fa-search"></i></a>
+    </div>
+    <div>
+
+        <button class="tr-padding-large tr-button tr-right" title="quick enquiry" onclick="document.getElementById('contactModal').style.display='block'">enquiry <i class="fa fa-question-circle" aria-hidden="true"></i></button>
+    </div>
+</div>
+
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="tr-bar-block tr-black tr-hide tr-hide-large tr-hide-medium tr-top" style="margin-top:46px">
+    <a href="#band" class="tr-bar-item tr-button tr-padding-large" onclick="myFunction()">ABOUT US</a>
+    <a href="#tour" class="tr-bar-item tr-button tr-padding-large" onclick="myFunction()">PROJECTS</a>
+    <a href="#contact" class="tr-bar-item tr-button tr-padding-large" onclick="myFunction()">CONTACT</a>
+    <a href="#" class="tr-bar-item tr-button tr-padding-large" onclick="myFunction()">OUR SERVICES</a>
+    <div class="tr-dropdown-hover tr-hide-small">
+        <button class="tr-padding-large tr-button" title="More">OUR SERVICES <i class="fa fa-caret-down"></i></button>
+        <div class="tr-dropdown-content tr-bar-block tr-card-4">
+            <a href="#" class="tr-bar-item tr-button" onclick="document.getElementById('kathaModal').style.display='block'">Katha Transfer</a>
+            <a href="#" class="tr-bar-item tr-button" onclick="loanDetails()">Loan</a>
+            <a href="#" class="tr-bar-item tr-button" onclick="docsVerification()">Document Verification</a>
+            <a href="#" class="tr-bar-item tr-button" onclick="propRegistration()">Prop Registartion</a>
+        </div>
+    </div>
+</div>
+
+<!-- Page content -->
+
+<div class="tr-content" style="max-width:2000px;margin-top:46px">
+
+
+    <div class="mySlides tr-display-container tr-center">	
+
+       
+       <div class="gfg">
+            <img src="../images/kiab_1.jpg" style="width:70%">
+            <div>
+                <!-- <h3 class="first-txt"> <span class="font-40">Smart Investment </span> <br> Register your flot today!! <br> 30X40 flots
+                    <br> for just <br> Rs.20 Lakhs
+
+                <br> <br>
+                    <span class="font-30">
+                    At Budigere <br>
+                    Near KIADB IT Park, Devanahalli
+                    </span>
+                </h3> -->
+
+            <h3 class="second-txt"></h3>
+            <h3 class="second-txt"></h3>
+            </div>
+        </div> 
+    </div>
+    <div class="mySlides tr-display-container tr-center">
+       <img src="../images/vidhan.jpg" style="width:70%">
+       <div class="tr-display-bottommiddle tr-container tr-text-white tr-padding-32 tr-hide-small">
+          
+       </div>
+   </div>
+   <div class="mySlides tr-display-container tr-center">
+       <img src="../images/Bangalore-F.jpg" style="width:70%">
+       <div class="tr-display-bottommiddle tr-container tr-text-white tr-padding-32 tr-hide-small">
+          
+       </div>
+   </div>
+   <div class="mySlides tr-display-container tr-center">
+       <img src="../images/chicago.jpg" style="width:70%">
+       <div class="tr-display-bottommiddle tr-container tr-text-white tr-padding-32 tr-hide-small">
+           
+       </div>
+   </div>
+  
+    <div class="mySlides tr-display-container tr-center">
+        <img src="../images/tr-1.jpg" style="width:70%">
+        <div class="tr-display-bottommiddle tr-container tr-text-white tr-padding-32 tr-hide-small">
+          
+        </div>
+    </div>
+
+
+    <!-- The Band Section -->
+    <div class="tr-container tr-content tr-center tr-padding-64" style="max-width:800px" id="band">
+        <h2 class="tr-wide">ABOUT US</h2>
+        <p class="tr-opacity"><i>We at True Value Properties truly believe that homes are the most emotional and important purchases that people make in their lifetimes. We are deeply passionate about our homes and feel innately responsible to make the experience of owning and living in our homes a matter of joy and pride.
+We have constantly striven to improve our projects and customer experience through continuous interactions with our clients, understanding their needs and aspirations. 
+Buying a lovely home is probably the most significant and expensive purchase you’ll ever make. Find your dream home/flat/plot/land at True Value Properties. We are one of the genuine developers & promotors in Bengaluru to explore your investment opportunities. We can make the process simple and easy with our transparent & ethical business practise. We make sure to deliver genuine properties with clear title across Karnataka. 
+</p>
+      
+    </div>
+
+    <!-- The Tour Section -->
+    <div class="tr-black" id="tour">
+        <div class="tr-container tr-content tr-padding-64" style="max-width:800px">
+            <h2 class="tr-wide tr-center">OUR PROJECTS</h2>
+          
+            
+            <div class="tr-row-padding tr-padding-32" style="margin:0 -16px">
+                <div class="tr-third tr-margin-bottom">
+                    <img src="../images/wtc.jpg" alt="New York" style="width:100%;height: 200px;" class="tr-hover-opacity">
+                    <div class="tr-container tr-white">
+                        <p><b>Bangalore-North</b></p>
+                        <p>Yalahanka, Notheast Banasawadi</p>
+                        <button class="tr-button tr-black tr-margin-bottom" onclick="document.getElementById('contactModal').style.display='block'">more properties</button>
+                    </div>
+                </div>
+                <div class="tr-third tr-margin-bottom">
+                    <img src="../images/ITPL_1.jpg" alt="Paris" style="width:100%" class="tr-hover-opacity">
+                    <div class="tr-container tr-white">
+                        <p><b>Bangalore-East</b></p>                    
+                        <p>Sarjapur Road, ITPL</p>
+                        <button class="tr-button tr-black tr-margin-bottom" onclick="document.getElementById('contactModal').style.display='block'">more properties</button>
+                    </div>
+                </div>
+                <div class="tr-third tr-margin-bottom">
+                    <img src="../images/bsouth.jpg" alt="Paris" style="width:100%" class="tr-hover-opacity">
+                    <div class="tr-container tr-white">
+                        <p><b>Bengalore South</b></p>                       
+                        <p>Mysure Road, Banneraghatta </p>
+                        <button class="tr-button tr-black tr-margin-bottom" onclick="document.getElementById('contactModal').style.display='block'">more properties</button>
+                    </div>
+                </div>
+                <div class="tr-third tr-margin-bottom">
+                    <img src="../images/kaib.jpg" alt="Paris" style="width:100%" class="tr-hover-opacity">
+                    <div class="tr-container tr-white">
+                        <p><b>Bengalore Airport</b></p>                       
+                        <p>Near KIA- Bagaluru</p>
+                        <button class="tr-button tr-black tr-margin-bottom" onclick="document.getElementById('contactModal').style.display='block'">more properties</button>
+                    </div>
+                </div>               
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Ticket Modal -->
+    <div id="contactModal" class="tr-modal">
+        <div class="tr-modal-content tr-animate-top tr-card-4">
+            <header class="tr-container tr-teal tr-center">
+        <span onclick="document.getElementById('contactModal').style.display='none'"
+              class="tr-button tr-teal tr-xlarge tr-display-topright">×</span>
+                <h2 class="tr-wide"><i class="fa fa-suitcase tr-margin-right"></i>Reach Us</h2>
+            </header>
+            <div class="tr-container">
+                <p><label><i class="fa fa-user"></i> Your Name</label></p>
+                <input class="tr-input tr-border" type="text" placeholder="Your Name">
+                <p><label><i class="fa  fa-envelope"></i> Email</label></p>
+                <input class="tr-input tr-border" type="text" placeholder="Email">
+                <p><label><i class="fa fa-phone"></i> Phone</label></p>
+                <input class="tr-input tr-border" type="text" placeholder="Your Phone">
+                <p><label><i class="fa fa-commenting" aria-hidden="true"></i> Message</label></p>
+                <textarea  class="tr-input tr-border" rows="4" cols="50" placeholder="Your message"> </textarea>
+                <button class="tr-button tr-block tr-teal tr-padding-16 tr-section tr-right" onclick="submitQuery()">Submit <i class="fa fa-check"></i></button>
+              
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Services Model -->
+    <div id="serviceModal" style="display:none">
+        <div class="tr-modal-content tr-animate-top tr-card-4">
+            <header class="tr-container tr-teal tr-center">
+                <h2 class="tr-wide"><i class="fa fa-suitcase tr-margin-right"></i>Katha Transfer</h2>
+            </header>
+            <div class="tr-container">
+                <p><label><i class="fa fa-shopping-cart"></i> Required Docs</label></p>
+                <p><label><i class="fa fa-user"></i> Aadhar</label></p>
+                <p><label><i class="fa fa-shopping-cart"></i> Pan</label></p>             
+
+            </div>
+        </div>
+    </div>
+    <div id="kathaModal" class="tr-modal" >
+        <div class="tr-modal-content tr-animate-top tr-card-4">
+            <header class="tr-container tr-teal tr-center tr-padding-32">
+                <h2 class="tr-wide"><i class="fa fa-suitcase tr-margin-right"></i>Katha Transfer</h2>
+            </header>
+            <div class="tr-container">
+                <p><label><i class="fa fa-shopping-cart"></i> Required Docs</label></p>
+                <p><label><i class="fa fa-user"></i> Aadhar</label></p>
+                <p><label><i class="fa fa-shopping-cart"></i> Pan</label></p>
+            </div>
+            <button class="tr-button tr-red tr-section" onclick="document.getElementById('kathaModal').style.display='block'">Close <i class="fa fa-remove"></i></button>
+        </div>
+    </div>
+
+
+    <!-- The Contact Section -->
+
+    <div class="tr-container tr-content tr-padding-64" style="max-width:800px" id="contact">
+        <h2 class="tr-wide tr-center">CONTACT US</h2>
+        <p class="tr-opacity tr-center"><i>Registred Office</i></p>
+        <div class="tr-row tr-padding-32">
+           
+            <div class="tr-col m6 tr-large tr-margin-bottom">
+
+                <i class="fa fa-map-marker" style="width:30px"></i> No. 747/4, 1st Floor, Opp. V.R.Plazza,<br> Budigere, Bengaluru - 562165<br> <br>
+                <i class="fa fa-phone" style="width:30px"></i> Call: +91-86602 23402<br><br>
+                <i class="fa fa-envelope" style="width:30px"> </i> Email: sales@true-value.in<br><br>
+                <i class="fa fa-clock-o" aria-hidden="true" style="width:30px"></i> Working Hours <br> 
+
+                Monday- Sunday: 10:00-18:00 Hrs<br>
+            </div>
+            <div class="tr-col m6">
+                <form target="_blank">
+                    <div class="tr-row-padding" style="margin:0 -16px 8px -16px">
+                       <!-- <div class="tr-half"> -->
+                            <input class="tr-input tr-border" type="text" placeholder="Name" required name="Name">
+                        <!-- </div> -->
+                        <!-- <div class="tr-half">
+                            <input class="tr-input tr-border" type="text" placeholder="Email" required name="Email">
+                        </div> -->
+                    </div>
+                    <div class="tr-row-padding" style="margin:0 -16px 8px -16px">
+                        <input class="tr-input tr-border" type="text" placeholder="Email" required name="Email">
+                    </div>
+                    <div class="tr-row-padding" style="margin:0 -16px 8px -16px;width:101%">
+                    <input class="tr-input tr-border" style="width: 107%;" type="text" placeholder="Phone" required name="Phone">
+                    </div>
+                    <div class="tr-row-padding" style="margin:0 -16px 8px -16px;width:108%">
+                    <textarea  class="tr-input tr-border"  rows="4" cols="50" placeholder="Your message" required name="Message"> </textarea>
+                    </div>
+                    <button class="tr-button  tr-block tr-teal tr-right" type="submit">SEND</button>
+                </form>
+            </div>
+        </div>
+    </div>
+   
+
+    <!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<!--<img src="./map.jpg" class="tr-image tr-greyscale-min" style="width:100%">-->
+
+<!-- Footer -->
+<footer class="tr-container tr-padding-64 tr-center tr-opacity tr-light-grey tr-xlarge">
+    <i class="fa fa-facebook-official tr-hover-opacity"></i>
+    <i class="fa fa-instagram tr-hover-opacity"></i>   	
+    <i class="fa fa-twitter tr-hover-opacity"></i>
+    <i class="fa fa-youtube tr-hover-opacity"></i>
+   <!-- <i class="fa fa-whatsapp tr-hover-opacity"></i> -->
+   
+    <p class="tr-medium">Powered by &copy</span> 2022 True Value Properties </p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 4000);
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("tr-show") == -1) {
+    x.className += " tr-show";
+  } else {
+    x.className = x.className.replace(" tr-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+function kathaTransfer(key){
+debugger;
+var x = document.getElementById("kathaModal");
+if(x)
+    x.style.display = "";
+
+}
+
+function loanDetails(){
+}
+
+function propRegistration(){
+}
+function docsVerification(){
+}
+
+function submitQuery(){
+
+document.getElementById('contactModal').style.display='none';
+alert('Thank for contacting us!. Our team will contact you within 24 hours');
+}
+
+
+function adminLogin(){
+    console.log("ADMIN CALLED@@@@@");
+}
+</script>
+
+</body>
+</html>
